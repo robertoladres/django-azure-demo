@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Personal Portfolio Website</title>
     <!----CSS link----->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
 </head>
 <body>
 
     <div class="hero">
         <nav>
+            {% load static %}
             <img src="{% static 'ladres.png' %}"  class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
